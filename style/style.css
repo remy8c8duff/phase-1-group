@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color:#ffffff;
+  background-image: url("images/background.jpg");
+  background-color: #8CB7B5;
+
+  /*font-family: 'Cairo', sans-serif;
+font-family: 'Exo', sans-serif;*/
+
+/*font2*/
+/*font-family: 'Cairo', sans-serif;
+font-family: 'Exo', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+
+  
+}
+
+/*white font color */
+/*color: #ffffff !important;*/
+
+/*Teal font color in case we have any white background areas*/
+/*font-family: "clavo", serif;
+    color: #8CB7B5;
+    font-size: 2em;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 0.8em;
+    line-height: 125%;
+}*/
+
+/*background color for web pages #8CB7B5  */
+
+nav {
+  padding:10px;
+}
+
+ul {
+  list-style:none;
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  width: 600px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+}
+
+.icon {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.icon a {
+  margin:15px;
+}
