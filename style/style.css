@@ -1,50 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  color:#ffffff;
-  background-image: url("images/background.jpg");
-  background-color: #8CB7B5;
-
-  /*font-family: 'Cairo', sans-serif;
-font-family: 'Exo', sans-serif;*/
-
-/*font2*/
-/*font-family: 'Cairo', sans-serif;
-font-family: 'Exo', sans-serif;
-font-family: 'Open Sans', sans-serif; */
-
-
-  
+  color: #ffffff;
+  /*background-image: url("../images/background.jpg");*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
 }
 
-/*white font color */
-/*color: #ffffff !important;*/
+h1 {
+  font-size: 90px;
+  font-family: 'Poiret One', cursive;
+  font-weight: normal;
+}
 
-/*Teal font color in case we have any white background areas*/
-/*font-family: "clavo", serif;
-    color: #8CB7B5;
-    font-size: 2em;
-    font-weight: 300;
-    font-style: italic;
-    margin-bottom: 0.8em;
-    line-height: 125%;
-}*/
+h2 {
+  font-size: 60px;
+  font-family: 'Poiret One', cursive;
+  font-weight: normal;
+}
 
-/*background color for web pages #8CB7B5  */
+h3 {
+  font-family: 'Poiret One', cursive;
+  font-weight: normal;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+h5 {
+  font-family: 'Cairo', sans-serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 20px;
+}
+
+.subtitle {
+  margin-top: 60px;
+}
+
+p {
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px;
+}
 
 nav {
-  padding:10px;
+  padding: 10px;
+  display: flex;
+  /*background-color: #8CB7B5;*/
+  /*opacity: 0.5;*/
+  background-color: rgba(61, 75, 169, 0.28);
+}
+
+img {
+  height: inherit;
 }
 
 ul {
-  list-style:none;
-  display:flex;
-  align-items:center;
+  list-style: none;
+  display: flex;
+  align-items: center;
   justify-content: space-around;
   width: 600px;
+  margin: auto;
+}
+
+li,a:link, li,a:visited {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+}
+
+/*Are we going to have a different hover color?*/
+
+li,a:hover {
+  color: rgba(206, 88, 3, 1);
+}
+
+li,a:active {
+  opacity: 1;
+}
+
+table {
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px;
+}
+tr {
+  height: 20px;
+}
+
+th {
+  text-align: left;
+}
+
+td:first-child {
+  width: 125px;
+}
+
+td:nth-child(2) {
+  width: 300px;
+}
+
+td:nth-child(3) {
+  width: 210px;
+}
+
+td:last-child {
+  width: 80px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  background-color: rgba(54, 164, 201, 0.28);
+}
+
+.index{
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services {
+  background-image: url("../images/beach_massage_table-1245037_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.packages {
+  background-image: url("../images/wellness-589774_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.contact {
+  background-image: url("../images/shells-792912_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.logo {
+  height: 100px;
 }
 
 .main {
@@ -52,6 +166,17 @@ ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  /*background-color: #8CB7B5;*/
+  /*opacity: 0.6;*/
+  background-color: rgba(232, 44, 210, 0.38);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
 }
 
 .welcome {
@@ -59,15 +184,75 @@ ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 300px;
+  height: calc(100vh - 308px);
+  /*background-color: #8CB7B5;*/
+  /*opacity: 0.6;*/
+  background-color: rgba(54, 164, 201, 0.28);
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 20px;
+  background-color: rgba(54, 164, 201, 0.28);
+  /*background-color: #8CB7B5;*/
+  /*opacity: 0.6;*/
+}
+
+.group {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .icon {
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.box:last-child {
+  margin-bottom: 20px;
+}
+
+.note {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row>p {
+  width: 90%;
 }
 
 .icon a {
-  margin:15px;
+  margin: 15px;
+}
+
+.slides {
+  height: 500px;
+  margin-top: 40px;
+  text-decoration: underline;
+  border: 50px double #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
